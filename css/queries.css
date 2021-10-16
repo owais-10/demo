@@ -122,10 +122,11 @@ INSTEAD 1REM= 1EM = 16PX */
 
     .btn-mobile-nav {
         display: block;
+        z-index: 9999;
     }
 
     .main-nav {
-        background-color: rgb(243, 234, 234);
+        background-color: rgb(255, 255, 255, 0.97);
         position: absolute;
         top: 0;
         left: 0;
@@ -159,13 +160,15 @@ INSTEAD 1REM= 1EM = 16PX */
         transform: translateX(0);
     }
 
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
     .nav-open .icon-mobile-nav[name="close-outline"] {
         display: block;
     }
 
-    .nav-open .icon-mobile-nav[name="menu-outline"] {
-        display: none;
-    }
+    
 
     .main-nav-list {
        flex-direction: column;
